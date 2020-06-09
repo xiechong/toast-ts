@@ -1,0 +1,69 @@
+{
+  "name": "toast-ts",
+  "version": "1.0.0",
+  "description": "a plugin of toast for react by typescript",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "webpack-dev-server --open development",
+    "build": "webpack --config webpack.build.config.js --mode production",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json"
+  },
+  "keywords": [
+    "react",
+    "toast",
+    "typescript"
+  ],
+  "author": "xc",
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiechong/toast-react.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiechong/toast-react.git/issues"
+  },
+  "homepage": "https://github.com/xiechong/toast-react.git#readme",
+  "dependencies": {
+    "@types/html-webpack-plugin": "^3.2.1",
+    "@types/node": "^12.6.8",
+    "@types/react": "^16.8.20",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/webpack": "^4.32.1",
+    "media-show-card": "^1.0.3",
+    "pre-commit": "^1.2.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "ts-node": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.3",
+    "@types/jest": "^24.0.16",
+    "copy-webpack-plugin": "^6.0.2",
+    "css-loader": "^3.1.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "file-loader": "^4.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.3",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.2",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
